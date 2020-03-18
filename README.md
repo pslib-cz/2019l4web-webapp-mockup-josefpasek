@@ -16,6 +16,7 @@ Pole je ohraničeno pobřezními bloky, odkud hráš vyráží na piráty určen
 Po vygenerování hrací plochy bude hráči poskytnuto 5 hracích panelů které budou složeny z jednotlivých herních polí.
 ![Potenciální poskytnité tvary](/assets/img/p_shapes.jpg)
 Hráč po se bude po vygenerování sítě bude muset řídit dle označení "X". Tam mají být bedny s rumem umístěny. Pokud mu nějaké bedny přebývají, nevadí, podstatné je, aby na polích s "X" byla bedna.
+## Hrací bloky
 ![1 pole hrací sítě před začátkem hry](/assets/graphics/still_water.png)
 ![Pobřežní pole](/assets/graphics/coast.png)
 ![Rohové pobřežní pole](/assets/graphics/coast_corner.png)
