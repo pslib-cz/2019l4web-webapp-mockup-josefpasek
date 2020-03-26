@@ -1,5 +1,6 @@
 # Boxes of Rum
 ![Úvodní obrázek](/assets/img/thumb.jpg)
+**Grafické podklady, veškeré změny a návrhy lze nalézt na [tomto odkazu!](https://www.figma.com/file/SNWwj8H8iW03R6Cd8TMgK4/WEB_game_app?node-id=18%3A118)**
 ## Pomoz pirátům přežít dlouhé dny na moři
 Aby pirátům při plavbách nevyschlo v krku, potřebují rum. Jako jejich dodavatel musíš poslat na specifické souřadnice v moři bedny s rumem. Piráti souřadnice však neustále mění, aby je konfederace nenašla dřív. Dokážeš všechy bedny umístit na správné souřadnice?
 ## Cíl hry
