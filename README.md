@@ -33,7 +33,7 @@ Po spuštění tlačítkem HRÁT bude uživateli vyobrazena hrací plocha s ozna
 ![Herní obrazovka](/assets/img/screen.jpg)
 Bloky budou předem složené a natočené do pozice, ve které se mají nacházet ve správném rešení pro usnadnění realizace a hry samotné.
 Veškeré herní bloky lze nalézt v pravém vyskakovacím menu (v mobilní verzi ve spodní části obrazovky).
-![Bloky](/assets/img/part_choise_screen.jpg)
+![Bloky](/assets/img/part_choise_menu.jpg)
 Na levé stránce obrazovky (v mobilní verzi v horní části), se náchází menu s možnostmi zobrazení **pravidel** a možnost **změny obtížnosti**.
 ![Menu](/assets/img/main_menu_screen.jpg)
 Po správném umístění veškerých hracích bloků, bude uživateli vyobrazeno oznámení správného řešení, odkud má možnost HRÁT ZNOVU. Pokud se rozhodně hrát znovu, bude mu vyobrazena obrazovka s výběrem obtížnosti, načež může hrát od začátku.
