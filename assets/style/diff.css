@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0; padding: 0;
+    background-color: #555555;
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body * {
+    display: block;
+    box-sizing: border-box;
+}
+
+main {
+    position: absolute;
+    background-color: #EAD79B;
+    width: 100%;
+    height: 65%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 30px;
+    text-align: center;
+    padding: 4vw 3vw;
+}
+
+
+main > span {
+    font-size: 2rem;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+main > nav {
+    margin-top: 1rem;
+}
+
+main > nav > ul {
+    display: flex;
+    padding: 0;
+    margin-top: 4vw;
+    justify-content: space-evenly;
+}
+
+main > nav > ul li {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #D9C484;
+    position: relative;
+    box-shadow: #333 2px 2px 4px;
+}
+
+main > nav > ul div {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: #e7e7e7 -2px -2px 4px;
+}
+
+main > nav > ul li span {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+main > .wrapper {
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 60px;
+    width: 210px;
+    box-shadow: #333 2px 2px 4px;
+}
+
+main > .wrapper div {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: #e7e7e7 -2px -2px 4px;
+}
+
+main > .wrapper div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/*----mobile---*/
+
+@media all and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+    
+    main {
+        height: 80%;
+    }
+}
