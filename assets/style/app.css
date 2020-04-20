@@ -2,22 +2,256 @@
 
 /*---normalize---*/
 
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 
+body {
+    overflow-x: hidden;
+    margin: 0; padding: 0;
+    background-color: #EAD79B;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body * {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body header > figure {
+    width: 100%;
+    height: 10vh;
+    top: 1.5rem;
+}
+
+body header > figure img {
+    position: relative;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /*---playboard grid---*/
 
+main .board {
+    position: relative;
+    height: 65vh;
+    width: 65vh;
+    border-radius: 7%;
+    left: 50%;
+    top: 3vh;
+    transform: translateX(-50%);
+    box-shadow: #333 2px 2px 5px;
+}
 
+main .board > .board_shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 7%;
+    box-shadow: #e7e7e7 -3px -3px 5px;
+}
+
+main .board .board_grid {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 1.25fr 1fr 1fr 1fr 1fr 1fr 1.25fr;
+    grid-template-columns: 1.25fr 1fr 1fr 1fr 1fr 1fr 1.25fr;
+}
+
+/*Rozmístit jednotlivé pole do gridu*/
+
+
+/*---activate/deactivate toggle---*/
+
+/* main .popup_unact, .menu_unact {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    background-color: #D9C484;
+} */ /*Aktivace/deaktivace vložením třídy...aktivace: ..._active, deaktivace: ..._unact*/
+
+main .popup_active, .menu_active {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: #D9C484;
+}
 
 /*---main_menu---*/
 
+main .menu {
+    top: 0;
+    left: 0;
+    border-radius: 0 30px 30px 0;
+    box-shadow: #333 2px 2px 5px;
+}
 
+main .menu > figure {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%; right: 15px;
+    transform: translateY(-50%);
+}
+
+main .menu > figure img {
+    width: 100%;
+}
+
+main .menu_unact ul {
+    display: none;
+}
+
+main .menu_active ul {
+    display: block;
+    position: relative;
+    top: 7vh;
+    width: calc(100% - 70px);
+    left: 20px;
+}
+
+main .menu_active ul li {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #333 2px 2px 5px;
+    margin: 5vh 0;
+}
+
+main .menu_active ul li > span {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #e7e7e7 -3px -3px 5px;
+}
+
+main .menu_active ul li > span > span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
 
 /*---part_menu---*/
 
+main .popup {
+    top: 0;
+    right: 0;
+    border-radius: 30px 0 0 30px;
+    box-shadow: #e7e7e7 -3px -3px 5px;
+}
 
+main .popup > figure {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%; left: 15px;
+    transform: translateY(-50%);
+}
+
+main .popup_unact > figure img {
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+main .popup_active > figure img {
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+main .popup_active {
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #D9C484;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: rgba(51, 51, 51, 0.363);
+    border-radius: 3px;
+}
+
+main .popup_unact ul {
+    display: none;
+}
+
+main .popup_active ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 7vh;
+    height: 100%;
+    overflow-y: scroll;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+main .popup_active ul li {
+    width: 18vw;
+    height: 18vw;
+    border-radius: 20px;
+    box-shadow: #333 2px 2px 5px;
+    margin: 2vh 0;
+}
+
+main .popup_active ul li figure {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: #e7e7e7 -3px -3px 5px;
+}
 
 /*---button---*/
 
+main > .wrapper {
+    top: 2vh;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: #D9C484;
+    box-shadow: #333 2px 2px 4px;
+}
 
+main > .wrapper div {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: #e7e7e7 -2px -2px 4px;
+}
 
-/*---mobile---*/
+main > .wrapper div img {
+    position: relative;
+    width: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+}
