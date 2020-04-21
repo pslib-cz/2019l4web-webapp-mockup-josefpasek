@@ -66,8 +66,144 @@ main .board .board_grid {
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
+    grid-gap: 0;
     grid-template-rows: 1.25fr 1fr 1fr 1fr 1fr 1fr 1.25fr;
     grid-template-columns: 1.25fr 1fr 1fr 1fr 1fr 1fr 1.25fr;
+}
+
+main .board .board_grid .b1, .b2, .b3, .b4, .b5 {
+    background-image: url(../graphics/c_t.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main .board .board_grid .bc1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image: url(../graphics/c_corner.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(270deg);
+}
+
+main .board .board_grid .b1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+main .board .board_grid .b2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+main .board .board_grid .b3 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+main .board .board_grid .b4 {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+main .board .board_grid .b5 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+main .board .board_grid .bc2 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image: url(../graphics/c_corner.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .board .board_grid .b6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .w1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .w2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .w3 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .w4 {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .w5 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+main .board .board_grid .b7 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+main .board .board_grid .b6, .b8, .b10, .b12, .b14 {
+    background-image: url(../graphics/c_l.svg);
+}
+
+main .board .board_grid .b7, .b9, .b11, .b13, .b15 {
+    background-image: url(../graphics/c_r.svg);
+}
+
+main .board .board_grid .b16, .b17, .b18, .b19, .b20 {
+    background-image: url(../graphics/c_b.svg);
+}
+
+main .board .board_grid .w {
+    background-image: url(../graphics/w_bottom.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*Rozmístit jednotlivé pole do gridu*/
@@ -75,12 +211,12 @@ main .board .board_grid {
 
 /*---activate/deactivate toggle---*/
 
-/* main .popup_unact, .menu_unact {
+main .popup_unact, .menu_unact {
     width: 60px;
     height: 100%;
     position: absolute;
     background-color: #D9C484;
-} */ /*Aktivace/deaktivace vložením třídy...aktivace: ..._active, deaktivace: ..._unact*/
+} /*Aktivace/deaktivace vložením třídy...aktivace: ..._active, deaktivace: ..._unact*/
 
 main .popup_active, .menu_active {
     position: absolute;
